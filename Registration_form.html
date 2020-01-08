@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ekaterina Levashina</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+	
+    <body>
+	<div class="container">
+        <header> 
+            <div class="Logo"><img src="img/Logo.png" alt="Cheshir_cat" width="360" height="240" ></div>
+			<ul class="main_menu">
+				<li><a href="Index.html">Welcome page</a></li>
+				<li><a href="Catalog.html">Cats</a></li>
+				<li><a href="Registration_form.html">Registration</a></li>
+				<li><a href="Contacts.html">Contacts</a></li>
+			</ul>
+       </header>
+        <hr>
+        <h1>Registration form</h1>
+        <form name="reg" action="" method="POST">
+        
+		<div class="form-inline">
+			<div class="form-group mb-2">
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Kate">
+			</div>
+		</div>
+		
+        <div class="form-group">
+		
+		<label for="gender">Gender</label>
+		
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="gender" id="Male" value="Male">
+			<label class="form-check-label" for="Male">Male</label>
+		</div>
+		
+		<div class="form-check">		
+			<input class="form-check-input" type="radio" name="gender" id="Female" value="Female">
+			<label class="form-check-label" for="Female">Female</label>
+		</div>
+		</div>
+		
+		<div class="form-group">
+		<label for="interests">Your interests</label>
+        
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" name="interests" id="Sport">
+			<label class="form-check-label" for="interests">Sport</label>
+		</div>
+		
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" name="interests" id="Cats">
+			<label class="form-check-label" for="interests">Cats</label>
+		</div>
+		
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" name="interests" id="SportCats">
+			<label class="form-check-label" for="interests">Sport with Cats</label>
+		</div>
+		</div>
+       
+		
+		<button type="submit" class="btn btn-primary">Confirm</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+         <footer>
+        All right reserves by &copy; kittens<br>
+        </footer>
+	</div>
+    </body>
+</html>

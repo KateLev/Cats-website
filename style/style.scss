@@ -1,0 +1,258 @@
+$fontColor: #F8F8FF;
+
+.main_menu {
+	list-style-type: none;        
+        text-transform: uppercase;         
+        padding-top:170px;
+       
+        float:right;
+       
+}
+.main_menu li {    
+    display: inline;
+    padding: 20px;    
+    text-align: center;
+    background-color: #FFE4B5; 
+    border: 1px solid black;
+    
+}
+
+.main_menu li a {
+    text-decoration: none;   
+    font-family: Helvetica;    
+    font-weight: bold;
+    padding: 5px;   
+    
+    
+}
+.main_menu li:hover {
+    background-color: $fontColor;     
+    
+}
+header {
+  background-color: #ffffff;    
+  height: 250px;
+}
+/*
+header:before {
+  content: "The cat is fine too";     
+  font-style: italic;
+  font-color: $fontColor;
+}
+*/
+.Logo {    
+    float:left;
+    padding: 10px 0 0 10px;
+    overflow: hidden;
+ }
+
+footer {
+    background-color: #ffffff;
+    text-align: right;
+    padding: 20px 20px 0 0;
+    height:80px;
+}
+body {
+    font-family: Helvetica;
+    background-color: #f8f8f8;       
+}
+body br{
+    margin: 10px;
+}
+.body_product {
+   font-family: Helvetica;  
+}
+.body_product p:first-letter{
+    font-size:2em;
+    color: Brown;
+    font-style: italic;
+}
+.body_product h1, h2, h3 {
+    color: black;
+    font-size: 18px;
+
+     
+}
+
+.Product_characters {    
+    font-style: oblique;   
+}
+
+.Product_characters li{
+    font-size: 20px;
+    margin: 10px;
+    list-style-image: url(../img/Cat_paw.png);      
+}
+.Feedback_form
+{
+    padding: 20px;   
+    width: 300px;
+}
+.Feedback_form br {
+    padding: 20px;
+    font-size: 25px;
+}
+%Feedback_form_focus {
+	background-color: #eaeaea;
+    color: #484343;
+}
+
+#Feedback_form_email:focus {
+    @extend %Feedback_form_focus
+    
+}
+
+#Feedback_form_name:focus {
+    @extend %Feedback_form_focus  
+}
+
+%Feedback_form {
+    height: 25px;
+    font-size: 20px;
+    color: black;
+    font-family: arial;
+    width: 500px;
+}
+
+#Feedback_form_name {
+    @extend %Feedback_form
+}
+
+#Feedback_form_email {
+    @extend %Feedback_form   
+}
+input {
+    text-transform: capitalize;  
+}
+.for_border_image {
+    outline-color:black;
+    outline-width: 10px;
+    padding: 10px;
+    outline: 1px solid #666;
+
+}
+.for_border_image:hover {
+    
+    outline-width: 10px;
+    padding: 10px;
+    outline: 1px solid transparent;
+}
+table, td {
+    border:1px solid #666;
+    padding:10px;
+    text-align: center;
+}
+table {
+    background-color: #eaeaea;
+}
+td{
+    background-color:white;
+    
+}
+.More_height {
+    width:150px;
+    height:150px;
+}
+
+.katalog_img_description{
+    
+    height: 280px;
+    margin-bottom: 30px;
+}
+.katalog_img_description img {
+    float: left;
+}
+
+.Buy_button {
+    margin-left: 300px; 
+    overflow: hidden; 
+}
+
+.Buy_button:hover{
+    cursor: pointer;
+}
+.Buy_button:active{
+    margin-top: 5px;
+    
+}
+.katalog_img_description p
+{
+    padding: 30px 30px 20px 30px;	
+    overflow: hidden;
+    text-align: center;
+}
+h3{
+    clear: both;
+}
+
+.Map iframe {
+    width:100%;
+    height: 374px;
+}
+.Catalog_gallery
+{    
+    height:300px;    
+}
+
+.Product_gallery {
+    display:inline;    
+    text-align: center;
+    border: 5px solid #FFE4B5;
+    padding: 5px;
+  
+}
+.Product_gallery a
+{
+    text-decoration: none;
+    
+}
+.Product_gallery:hover {
+    border: 5px solid transparent;
+}
+.Container
+{
+    width: 100%;    
+    margin: auto;    
+}
+#intro{
+color: red;
+}
+
+//nesting 
+
+.row {
+	a {
+		color: black;
+	}		
+}
+.row a:hover {
+	text-decoration:none;
+	color: grey;
+}
+.row>.col{
+	text-align: center;
+	padding-right:-15px;
+	padding-left:-15px;
+}
+
+@media (max-device-width: 750px) {
+  .main_menu {
+    padding-top: 20px;
+	text-transform:none;
+	float: left;
+  }
+  .main_menu li {
+	padding: 2px;
+  }
+}
+@media (max-device-width: 1200px) and (min-device-width: 751px) {
+  .main_menu {
+    padding-top: 20px;
+	text-transform:none;
+	float: right;
+  }
+  .main_menu li {
+	padding: 2px;
+  }
+}
+
