@@ -13,3 +13,5 @@ More about requirements:
 5. @media query are on the bottom of style.css file for devices smaller that 750px, medium (751-1200) and large ones.
 6. Bootstrap is used on every web page as Container class; grid model is used on Cats webpage. It helped cat's photos to look well.
 7. In style.scss you can find a variable $fontColor (Ln 1), examples of nesting (Ln 223-227) and inheritance (Ln 95-123).
+
+It's available on https://katelev.github.io/Cats-website/index.html
