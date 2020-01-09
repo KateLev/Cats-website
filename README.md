@@ -2,7 +2,7 @@ Hello, this is a short description of little Cat's website.
 It contains main menu with "Welcome page", "Cats" as cat's catalog, "Registration form" that now is not connected with any backend code and "Contacts" with Google map.
 All these html files lie into main folder. 
 In Cats catalog there is a three page about different cats with their photos. These html files lie into Catalog folder.
-Both style.css and style.ccss are placed into style folder. Bootstrap is connected via their website.
+Both style.css and style.ccss were placed into style folder. Bootstrap is connected via its website.
 All of the images are into img folder.
 
 More about requirements:
